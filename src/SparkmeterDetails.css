@@ -1,0 +1,58 @@
+.sparkmeter-container {
+  background: #1e2633;
+  color: white;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.sparkmeter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sparkmeter-header h2 {
+  color: white;
+}
+
+.button-group > button {
+  margin-left: 10px;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.sparkmeter-table .ant-table {
+  background: #1e2633;
+}
+
+.sparkmeter-table .ant-table-thead > tr > th {
+  background: #1e2633;
+  color: #00ff66;
+}
+
+.sparkmeter-table .ant-table-tbody > tr > td {
+  background: #1e2633;
+  color: white;
+}
+
+.edit-icon {
+  color: #00ff66;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pagination-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.footer-text {
+  color: #aaa;
+}
