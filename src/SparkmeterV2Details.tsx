@@ -28,7 +28,7 @@ const SparkmeterPagination = () => (
 );
 
 export const SparkmeterV2Details = () => (
-  <Box sx={{ bgcolor: 'background.default', p: 3, minHeight: '100vh' }}>
+  <Box sx={{ bgcolor: 'background.default', p: 3, minHeight: '100vh', }}>
     <Typography variant="h5" color="text.primary" gutterBottom>
       SparkmeterV2 Details
     </Typography>

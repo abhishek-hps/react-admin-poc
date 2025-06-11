@@ -1,55 +1,50 @@
 // NeuronAppBar.tsx
-import { AppBar } from "react-admin";
-import { Box, Typography, IconButton, Switch, Tabs, Tab } from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, Typography, IconButton, Switch } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
+import { MenuFoldOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+import { AppBar } from 'react-admin';
 
-export interface NeuronAppBarProps {
-  onMenuClick: () => void;
-}
-
-const NeuronAppBar = ({ onMenuClick }: NeuronAppBarProps) => {
+const NeuronAppBar = () => {
   return (
-    <div
-   
-      style={{
-        backgroundColor: "red",
-      
-        height: 64,
-        position: "fixed",
-       
-        width:'100%'
-      }}
-    >
-      
-        {/* Left: Hamburger + Logo */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          {/* <IconButton onClick={onMenuClick} sx={{ color: "white" }}>
-            <MenuIcon />
-          </IconButton> */}
-          <Typography variant="h6" sx={{ color: "#9f7aea", fontWeight: "bold" }}>
+    <AppBar position='fixed'>
+     
+      <Box
+        sx={{
+         
+          display: 'flex',
+          width:'100%',
+          alignItems: 'center',
+          justifyContent:'space-between',
+          alignContent:'space-between'
+
+        }}
+      >
+        {/* Left Section: Logo */}
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, }}>
+          <Typography variant="h6" sx={{ color: '#9f7aea', fontWeight: 'bold' }}>
             HUSK.
           </Typography>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography variant="h6" sx={{ color: 'white' }}>
             Husk Power Systems
           </Typography>
         </Box>
 
        
 
-        {/* Right: Flag + Profile + Switch */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          
+        {/* Right Section: Flag + User + Toggle */}
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <img src="https://flagcdn.com/in.svg" alt="India" width={24} />
-            <Typography sx={{ color: "white", fontSize: 14 }}>India</Typography>
+            <Typography sx={{ color: 'white' }}>India</Typography>
           </Box>
           <IconButton>
-            <PersonIcon sx={{ color: "white" }} />
+            <PersonIcon sx={{ color: 'white' }} />
           </IconButton>
           <Switch />
-      
-   
-    </div>
+        </Box>
+      </Box>
+    </AppBar>
   );
 };
 
